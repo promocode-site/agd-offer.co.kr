@@ -1,6 +1,6 @@
 {
   "site": "agd-offer.co.kr",
-  "siteName": "아고다 할인코드 일본",
+  "siteName": "아고다 할인코드",
   "baseUrl": "https://agd-offer.co.kr",
   "postUrlPattern": "/blog/{slug}/",
   "updated": "2026-09-23",
