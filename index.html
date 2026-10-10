@@ -161,6 +161,9 @@
   <header class="ajw-header">
     <div class="ajw-in">
       <p class="ajw-sun" aria-hidden="true"></p>
+      <nav class="ajw-pages" aria-label="사이트 메뉴">
+        <ul class="ajw-pages-list"><li><a href="./" aria-current="page">홈</a></li><li><a href="promo-code/">프로모션코드</a></li><li><a href="coupon/">쿠폰</a></li><li><a href="card-discount/">카드할인</a></li></ul>
+      </nav>
       <p class="ajw-cap">AGODA PROMO CODE</p>
       <h1 class="ajw-h1">아고다 할인코드</h1>
       <p class="ajw-desc">국내·해외 숙소에 쓸 수 있는 아고다 할인코드부터 여행지별로 유리한 카드 할인, 10월 이벤트, 할인이 안 될 때 해결방법까지 한 페이지에 정리했습니다.</p>
@@ -575,6 +578,7 @@
   </div>
 
   <a class="ajk-cta-wide" href="https://app.ac/RtpXV1M83" target="_blank" rel="nofollow sponsored noopener">카드 할인 적용해서 예약하기</a>
+  <a class="ajk-more" href="card-discount/">아고다 카드할인 전체 보기</a>
 
 </section>
 
@@ -842,6 +846,18 @@
           <ul><li><a href="https://agd.trip-offer.co.kr/">아고다 할인코드</a></li><li><a href="https://exp.trip-offer.co.kr/">익스피디아 쿠폰</a></li><li><a href="https://hts.trip-offer.co.kr/">호텔스닷컴 할인쿠폰</a></li><li><a href="https://trip-offer.co.kr/">트립닷컴 할인코드</a></li><li><a href="https://klk.trip-offer.co.kr/">클룩 할인코드</a></li><li><a href="https://kkd.trip-offer.co.kr/">KKday 할인쿠폰</a></li><li><a href="https://mrt.trip-offer.co.kr/">마이리얼트립 할인쿠폰</a></li><li><a href="https://fft.trip-offer.co.kr/">파페치 쿠폰</a></li></ul>
         </div>
       </div>
+      <!--@FOOTER-LINKS-->
+      <div class="ajw-f-cols ajw-f-links">
+        <div>
+          <p class="ajw-f-title">카드사별 할인</p>
+          <ul><li><a href="shinhan-card/">신한카드</a></li><li><a href="kb-card/">KB국민카드</a></li><li><a href="hyundai-card/">현대카드</a></li><li><a href="samsung-card/">삼성카드</a></li><li><a href="hana-card/">하나카드</a></li><li><a href="woori-card/">우리카드</a></li><li><a href="lotte-card/">롯데카드</a></li><li><a href="nh-card/">NH농협카드</a></li><li><a href="mastercard-card/">마스터카드</a></li><li><a href="kakao-pay/">카카오페이</a></li><li><a href="naver-pay/">네이버페이</a></li><li><a href="toss-pay/">토스페이</a></li></ul>
+        </div>
+        <div>
+          <p class="ajw-f-title">다른 할인코드</p>
+          <ul><li><a href="tripcom/">트립닷컴</a></li><li><a href="klook/">클룩</a></li><li><a href="myrealtrip/">마이리얼트립</a></li><li><a href="hotelscom/">호텔스닷컴</a></li><li><a href="kkday/">kkday</a></li><li><a href="rakutentravel/">라쿠텐트래블</a></li></ul>
+        </div>
+      </div>
+      <!--@/FOOTER-LINKS-->
       <p class="ajw-f-copy">수집 기준일 <time datetime="2026-10-01">2026.10.01</time> · © 2026 아고다 할인코드</p>
       <a class="ajw-top" href="#ajw-top">맨 위로</a>
     </div>
@@ -870,6 +886,12 @@ html{scroll-behavior:smooth}
 .ajw-picks span{display:block;font-size:11px;font-weight:700;color:#a0978a;margin-bottom:3px}
 .ajw-picks strong{font-size:13.5px;font-weight:900;color:var(--red)}
 .ajw-updated{position:relative;font-size:12px;color:#a0978a}
+.ajw-pages{position:relative;overflow-x:auto;scrollbar-width:none;margin:-20px -16px 22px;padding:2px 16px}
+.ajw-pages::-webkit-scrollbar{display:none}
+.ajw-pages-list{list-style:none;display:flex;gap:6px;width:max-content;margin:0 auto}
+.ajw-pages-list a{display:block;white-space:nowrap;font-size:13px;font-weight:800;color:var(--ink);text-decoration:none;background:#fff;border:1px solid var(--ln);border-radius:999px;padding:7px 14px}
+.ajw-pages-list a:hover{border-color:var(--red);color:var(--red)}
+.ajw-pages-list a[aria-current="page"]{background:var(--ink);border-color:var(--ink);color:#fff}
 
 .ajw-nav{position:sticky;top:0;z-index:50;background:rgba(250,245,236,.97);border-bottom:1px solid var(--ln)}
 .ajw-nav-in{max-width:980px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:10px;height:58px}
@@ -896,6 +918,8 @@ html{scroll-behavior:smooth}
 .ajw-f-cols ul{list-style:none;display:flex;flex-direction:column;gap:7px}
 .ajw-f-cols a{color:#d9d2c6;text-decoration:none;font-size:12.5px}
 .ajw-f-cols a:hover{color:#fff;text-decoration:underline}
+.ajw-f-links{margin-top:24px}
+.ajw-f-links div:first-child ul{display:grid;grid-template-columns:1fr 1fr;gap:7px 12px}
 .ajw-f-copy{font-size:11.5px;color:#857d70;margin-top:26px}
 .ajw-top{display:inline-block;margin-top:12px;font-size:12px;font-weight:700;color:#fff !important;text-decoration:none !important;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 12px}
 
@@ -1061,6 +1085,8 @@ html{scroll-behavior:smooth}
 .ajk-note li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.35}
 .ajk-cta-wide{display:block;margin-top:20px;text-align:center;text-decoration:none !important;background:var(--red);color:#fff !important;font-size:15px;font-weight:800;padding:15px;border-radius:999px}
 .ajk-cta-wide:hover{background:var(--red2)}
+.ajk-more{display:block;margin-top:10px;text-align:center;text-decoration:none !important;background:#fff;border:1.5px solid var(--ink);color:var(--ink) !important;font-size:14px;font-weight:800;padding:13px;border-radius:999px}
+.ajk-more:hover{background:var(--ink);color:#fff !important}
 
 @media (max-width:660px){
   .ajk-title{font-size:23px}
